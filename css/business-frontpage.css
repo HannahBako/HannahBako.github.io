@@ -24,6 +24,11 @@ body {
 
 .middle {
   width: 75%;
+  text-align: left;
+}
+
+.row{
+  flex: 0 0 100%; /* Let it fill the entire space horizontally */
 }
 
 /* Clear floats after the columns */
