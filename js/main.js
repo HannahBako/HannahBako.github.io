@@ -44,7 +44,7 @@
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
-        $('.btn-play').click(function () {
+        $('.video-play').click(function () {
             $videoSrc = $(this).data("src");
         });
         console.log($videoSrc);
@@ -54,7 +54,7 @@
         })
 
         $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
+            $("#video").attr('src', "");
         })
     });
 

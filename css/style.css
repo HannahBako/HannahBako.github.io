@@ -4290,6 +4290,14 @@ input[type="button"].btn-block {
   }
 }
 
+.news-alert {
+  border-radius: 25px;
+  background: #e3e3e2;
+  padding: 20px;
+  align-items: center;
+  color: #1d2124
+}
+
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
