@@ -47,7 +47,6 @@
         $('.video-play').click(function () {
             $videoSrc = $(this).data("src");
         });
-        console.log($videoSrc);
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
@@ -56,8 +55,12 @@
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', "");
         })
+
+         //email click
+        $('#email-link').attr('href','mailto:' + ['h','b','a','k','o','@','v','i','r','g','i','n','i','a','.','e','d','u'].join(''))
     });
 
+    
 
     // Scroll to Bottom
     $(window).scroll(function () {
@@ -67,7 +70,6 @@
             $('.scroll-to-bottom').fadeIn('slow');
         }
     });
-
 
     // Skills
     $('.skill').waypoint(function () {
@@ -113,5 +115,6 @@
         items: 1
     });
     
+   
 })(jQuery);
 
